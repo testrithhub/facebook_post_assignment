@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-bottom: 0 !important;
+}
+
+
+.main{
+    padding: 100px 0;
+    width: 100%;
+    background-color:#242526;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post{
+    width: 40%;
+    height: auto;
+    background-color:rgba(131, 5, 5, 0.842);
+    border-radius: 13px;
+    color: #fff;
+    padding-bottom: 20px;
+    display: block;
+}
+
+
+.post-title{
+    position: relative;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(73, 71, 71);
+}
+.close-icon{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #464242;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.close-icon .fa-xmark{
+    font-size: 20px;
+}
+
+.post-user{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 10px 20px;
+}
+
+.user-img .image-style{
+    height: 60px;
+    width: 60px;
+    border-radius: 60%;
+    object-fit:contain;
+}
+
+.user-name{
+    margin-left: 10px;
+}
+
+.privacy{
+    margin-top: 2px;
+}
+
+.privacy .privacy-option{
+    background-color:#3085F3;
+    padding: 3px 8px 0px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.privacy .privacy-option i{
+    font-size: 10px;
+    margin: 0 2px;
+}
+.privacy .privacy-option em{
+    font-size: 12px;
+}
+
+.post-description{
+    padding: 0px 20px;
+}
+
+.post-description .my-form textarea#description {
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+}
+
+.post-description .my-form textarea:focus-visible{
+    outline:invert;
+}
+
+.variations{
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.variations img{
+    cursor: pointer;
+}
+
+
+.multiple-choices{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.choices{
+    border: 1px solid #464242;
+    padding: 15px 10px 10px 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-list{
+    font-size: 22px;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.fa-images{
+    color: #58C472;
+}
+.fa-user-tag{
+    color: #3085F3;
+}
+.fa-face-grin{
+    color: #CCA13D;
+}
+.fa-location-dot{
+    color: #f66551;
+}
+.fa-font-awesome{
+    color: #4DB7D9;
+}
+.fa-ellipsis{
+    color:#fff;
+}
+
+
+.post-btn{
+    padding: 0 20px;
+}
+
+.post-btn #btn-light{
+    background-color:#242526;
+    width: 100%;
+    color: #fff;
+    border: 1px solid #505151;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.post-btn #btn-light:hover{
+    color: #fff;
+    background-color: #3085F3;
+    border: 1px solid #3085F3;
+}
+
+#hide{
+    position: relative;
+    height: auto;
+    width: 40%;
+    background-color:rgba(131, 5, 5, 0.842);
+    border-radius: 13px;
+    margin-top: 20px;
+    display: none;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+#description-area{
+    padding: 20px 0;
+}
+
+.csdc{
+    display: flex;
+    color: #fff;
+}
+
+.like-post,.comment-post{
+    padding: 7px 15px 4px 15px;
+    border-radius: 6px;
+    background-color:#242526;
+    cursor:pointer;
+}
+
+.like-post,.comment-post:focus{
+    background-color:#3085F3;
+}
+.comment-post{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.head{
+    color:burlywood
+}
+
+@media only screen and (max-width: 992px)
+{
+    .post{
+        width: 90%;
+    }
+    #hide{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 576px)
+{
+    .post{
+        width: 90%;
+    }
+    #hide{
+        width: 90%;
+    }
+    .icon-list{
+        font-size: 18px;
+        margin: 0 3px;
+    }
+}
+@media only screen and (max-width: 200px)
+{
+    .post{
+        width: 90%;
+    }
+    #hide{
+        width: 90%;
+    }
+    .icon-list{
+        font-size: 18px;
+        margin: 0 3px;
+    }
+}
